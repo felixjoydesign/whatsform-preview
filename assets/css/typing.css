@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Poppins, 'DM Sans', sans-serif;
+}
+
+.hero-text {
+  font-size: 60px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.hero-text .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+/*
+  The word strip scrolls one row per step, so the travel has to be exactly the
+  row count times the row height, and the window has to be tall enough for the
+  glyphs. All three are written in em against the headline's own font size,
+  because that is the only way one keyframe serves both the 60px desktop
+  headline and the 50px mobile one. Pixels tuned for the desktop row were the
+  bug: on mobile each 90px step cleared two 45px rows, so the window landed on a
+  sliver of a word or ran off the end of the list onto nothing.
+
+  1.5em rows, 5 words, 3s each: height 1.5em, travel -7.5em, duration 15s. The
+  3s matches one cycle of the typing mask below. Changing the word list means
+  changing the step count, the travel and the duration together.
+*/
+.hero-text .dynamic-txts {
+  margin: 0px;
+  height: 1.5em;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: #29b21f;
+  position: relative;
+  top: 0;
+  animation: slide 15s steps(5) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -7.5em;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+}
+.dynamic-txts li span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f9fafb;
+  border-left: 2px solid #29b21f;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/*
+  The strip clips anything wider than its column, and on a phone that column is
+  the viewport less 64px of container padding. So the longest word sets the
+  headline size: "Registrations" runs about 6.9em, which only fits a 50px
+  headline from a 425px viewport up, and every phone narrower than that has to
+  scale. Spanish carries a longer word, "Realimentación" at about 8.2em, and so
+  starts scaling sooner.
+*/
+@media only screen and (max-width: 768px) {
+  .hero-text {
+    font-size: min(50px, calc((100vw - 64px) / 7.2));
+    text-align: center;
+    line-height: initial;
+  }
+
+  :lang(es) .hero-text {
+    font-size: min(50px, calc((100vw - 64px) / 8.5));
+  }
+}
+
+/*
+  Right to left.
+
+  This file lives in public/ and so never passes through postcss, which is where
+  postcss-rtlcss mirrors the rest of the site. These two rules have to be written
+  by hand.
+
+  The typewriter effect is a mask sitting over the word: it starts flush with the
+  start edge and slides past the end edge to reveal the text, with a border on
+  its leading side standing in for the cursor. Both of those are physical, so in
+  Arabic the mask uncovered the word from the wrong side and left it clipped.
+*/
+[dir='rtl'] .hero-text {
+  text-align: right;
+}
+
+[dir='rtl'] .dynamic-txts li span::after {
+  left: auto;
+  right: 0;
+  border-left: 0;
+  border-right: 2px solid #29b21f;
+  animation: typing-rtl 3s steps(10) infinite;
+}
+
+@keyframes typing-rtl {
+  40%,
+  60% {
+    right: calc(100% + 30px);
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  [dir='rtl'] .hero-text {
+    text-align: center;
+  }
+}
