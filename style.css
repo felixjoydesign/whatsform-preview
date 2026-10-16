@@ -864,6 +864,10 @@ video {
   flex-shrink: 1;
 }
 
+.shrink {
+  flex-shrink: 1;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -18228,6 +18232,23 @@ a.nav-contact-btn--hide {
 
 [dir="rtl"] .hero-image {
   margin-right: auto;
+}
+
+/*
+ * The feature pages' hero images: the widget, Google Form and teams scenes,
+ * exported at 2x from a 520px-wide scene with 32px of clear space around it
+ * for the shadows (scripts/export-heroes.py). 584px is that export's own CSS
+ * width, so it never shows past its resolution.
+ */
+.feature-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 584px;
+  height: auto;
+}
+
+[dir] .feature-hero-image {
+  margin: 0 auto;
 }
 
 /* --------------------------------------------------------------- share --- */
