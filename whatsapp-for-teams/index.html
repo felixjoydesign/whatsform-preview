@@ -102,7 +102,7 @@
 	<meta name="twitter:title" content="WhatsApp For Teams">
 	<meta name="twitter:description" content="Get customer inquiries on WhatsApp and distribute each conversation among your team automatically. Create WhatsApp forms, forward chats, and enhance team workflow efficiently. Try it for free!">
   
-    <link href="/whatsform-preview/style.css?v=3847501946" rel="stylesheet">
+    <link href="/whatsform-preview/style.css?v=bd30dc6e9f" rel="stylesheet">
   </head>
 
   <body>
@@ -112,7 +112,7 @@
 <section class="header" id="header">
    <div class="container mx-auto px-4 md:px-0 navbar navbar-expand-md">
       <div class="logo-container">
-         <a class="color-green" href="https://whatsform.com/">
+         <a class="color-green" href="/whatsform-preview/home/">
             <img class="logo" src="/whatsform-preview/assets/images/logo-dark.png" alt="WhatsForm" width="1020" height="228">
          </a>
       </div>
@@ -131,7 +131,7 @@
          <div class="nav-content">
             <ul>
                <li class="nav-right-logo">
-                  <a href="https://whatsform.com/"><img src="/whatsform-preview/assets/images/logo.png" alt="WhatsForm" width="1153" height="230"></a>
+                  <a href="/whatsform-preview/home/"><img src="/whatsform-preview/assets/images/logo.png" alt="WhatsForm" width="1153" height="230"></a>
                </li>
                <li><a href="https://whatsform.com/testimonials/" class="link color-heading">Testimonials</a></li>
                <li><a href="https://whatsform.com/templates/" class="link color-heading">Templates</a></li>
@@ -157,24 +157,29 @@
 				<div class="w-full md:w-1/2 wt-hero-image">
 					<!--
 						One chat, two teammates: the customer's inquiry arrives on the
-						business's WhatsApp and WhatsForm hands it to the right agent.
-						The inquiry is drawn large over both edges of the phone, as on
-						the widget page.
+						same wide WhatsApp screen the widget and Google Form heroes use,
+						drops into WhatsForm, and WhatsForm hands it to the right
+						agent. The figure is symmetric and needs no flip in Arabic.
 					-->
 					<div class="wt-scene" aria-hidden="true">
-						<div class="wt-phone">
-							<div class="wt-phone-bar">
-								<svg class="ill-iphone-glyph wt-phone-back" viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"></path></svg>
-								<span class="wt-phone-avatar">👟</span>
-								<span class="wt-phone-id">
-									<span class="wt-phone-name">Acme Shoes</span>
-									<span class="wt-phone-status">tap here for contact info</span>
-								</span>
-								<svg class="ill-iphone-glyph" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2.5"></rect><path d="M16 10.5l5-3v9l-5-3"></path></svg>
-								<svg class="ill-iphone-glyph" viewBox="0 0 24 24"><path d="M5 4h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 5.9 5.9l1.5-2.3L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4z"></path></svg>
-							</div>
-							<div class="wt-phone-thread">
-								<div class="ill-bubble ill-bubble-out">
+						<div class="ill-chat wt-scene-chat">
+  <div class="ill-chat-header">
+    
+    <span class="ill-chat-avatar ill-chat-avatar-blank">👟</span>
+    <span class="ill-chat-identity">
+      <span class="ill-chat-name">Acme Shoes</span>
+      <span class="ill-chat-status">tap here for contact info</span>
+    </span>
+    <span class="ill-chat-actions">
+      <i class="fas fa-video"></i>
+      <i class="fas fa-phone-alt"></i>
+    </span>
+  </div>
+
+  <div class="ill-chat-body">
+    
+    
+							<div class="ill-bubble ill-bubble-out">
   
   
   <p class="ill-bubble-text">Hi, I need sneakers 👟</p>
@@ -182,48 +187,44 @@
   
   
   <span class="ill-bubble-meta">
-      17:47
+      17:45
       <i class="fas fa-check-double ill-bubble-ticks"></i>
     </span>
 </div>
-								<div class="ill-bubble ill-bubble-in">
+							<div class="ill-bubble ill-bubble-in">
   
   
   <p class="ill-bubble-text">Sure! Share details at</p>
   
   
   
-									<span class="wt-hero-link">whatsform.com/AcmeShoes</span>
-								
+								<span class="wt-hero-link">whatsform.com/AcmeShoes</span>
+							
   <span class="ill-bubble-meta">
-      07:18
+      17:45
       
     </span>
 </div>
-							</div>
-							<div class="ill-iphone-composer">
-								<svg class="ill-iphone-glyph" viewBox="0 0 24 24"><path d="M12 4v16M4 12h16"></path></svg>
-								<span class="ill-iphone-input"><svg class="ill-iphone-glyph" viewBox="0 0 24 24"><path d="M20 12V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h5zM20 12a8 8 0 0 0-8 8"></path></svg></span>
-								<svg class="ill-iphone-glyph" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7H7l1.5-2h7L17 7h2.5A1.5 1.5 0 0 1 21 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5z"></path><circle cx="12" cy="12.5" r="3.5"></circle></svg>
-								<svg class="ill-iphone-glyph" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"></path></svg>
-							</div>
-						</div>
+							<div class="ill-bubble ill-bubble-out">
+  
+  <p class="ill-bubble-title">Inquiry for Acme Shoes</p>
+  
+  <p class="ill-bubble-line"><span class="ill-bubble-label">Name:</span> Calvin</p><p class="ill-bubble-line"><span class="ill-bubble-label">Shoe Size:</span> ⁦44 UK⁩</p>
+  
+  
+  <span class="ill-bubble-meta">
+      17:47
+      <i class="fas fa-check-double ill-bubble-ticks"></i>
+    </span>
+</div>
+						
+  </div>
 
-						<div class="wt-inquiry">
-							<p class="wt-inquiry-title">Inquiry for Acme Shoes</p>
-							<p>Name: Calvin</p>
-							<p>Shoe Size: ⁦44 UK⁩</p>
-							<span class="wt-inquiry-meta">17:47 <i class="fas fa-check-double"></i></span>
-						</div>
+  
+</div>
 
-						<!--
-							The inquiry drops into WhatsForm, which hands it to the
-							right teammate: the routing is the product, so it sits at
-							the centre. The figure is symmetric and needs no flip in
-							Arabic.
-						-->
 						<span class="wt-scene-drop"></span>
-						<span class="wt-scene-hub"><i class="fas fa-list-ul"></i></span>
+						<span class="wt-scene-hub"><img src="/whatsform-preview/assets/images/whatsform-mark.svg" alt="" class="ill-wf-mark" width="40" height="40" loading="lazy"></span>
 						<svg class="wt-scene-arrows" viewBox="0 0 520 560" fill="none">
 							<path d="M222 448C180 474 134 466 104 428"></path>
 							<path d="M100 424L118 426M100 424L105 441"></path>
@@ -233,16 +234,16 @@
 
 						<span class="wt-scene-agent is-left">
 								<span class="wt-agent-avatar">
-									<span class="ww-why-memoji" style="--memoji-bg:#cfe3f7">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-2.png" alt="" loading="lazy" width="128" height="128">
+									<span class="ww-why-person" style="--person-bg:#cfe3f7">
+										<img src="/whatsform-preview/assets/images/people/3.png" alt="" loading="lazy" width="263" height="259">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span>
 								<span class="ww-why-agent-name">Sales Agent</span>
 							</span><span class="wt-scene-agent is-right">
 								<span class="wt-agent-avatar">
-									<span class="ww-why-memoji" style="--memoji-bg:#d6f0d2">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" loading="lazy" width="128" height="128">
+									<span class="ww-why-person" style="--person-bg:#d6f0d2">
+										<img src="/whatsform-preview/assets/images/people/5.png" alt="" loading="lazy" width="249" height="249">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span>
@@ -254,21 +255,58 @@
 		</div>
 	</section>
 
-	
-	<section class="wt-trusted">
-		<div class="container mx-auto max-w-6xl px-4">
-			<h2>WhatsForm is trusted by teams at</h2>
-			<div class="wt-trusted-logos">
-				<img src="/whatsform-preview/assets/images/customers/monginis.png" loading="lazy" alt="Monginis" width="1615" height="357">
-				<img src="/whatsform-preview/assets/images/customers/edid.png" loading="lazy" alt="EDID" width="500" height="100">
-				<img src="/whatsform-preview/assets/images/customers/tikki-hywood-foundation.png" loading="lazy" alt="Tikki Hywood Foundation" width="150" height="139">
-				<img src="/whatsform-preview/assets/images/customers/civ-cargo-trans.webp" loading="lazy" alt="CIV Cargo Trans" width="156" height="156">
-				<img src="/whatsform-preview/assets/images/customers/yellowspot.png" loading="lazy" alt="Yellowspot" width="390" height="200">
-				<img src="/whatsform-preview/assets/images/customers/trusted-tax-consultants.png" loading="lazy" alt="Trusted Tax Consultants" width="313" height="98">
-				<img src="/whatsform-preview/assets/images/customers/infinity-finance.png" loading="lazy" alt="Infinity Finance" width="400" height="189">
-			</div>
+	<!-- Brands / Social proof -->
+<section class="brands-section">
+	<div class="container mx-auto px-4 xl:px-0">
+		<p class="brands-eyebrow" data-aos="fade-up">Trusted by <strong>10,000+ businesses</strong> worldwide</p>
+	</div>
+	<div class="brands-marquee" data-aos="fade-up" data-aos-delay="100">
+		<div class="brands-track">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/and-beyond-logo.svg" alt="andBeyond" loading="lazy" width="388" height="93">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/Greystar_Real_Estate_logo.png" alt="Greystar" loading="lazy" width="783" height="171">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/macna.png" alt="Macna" loading="lazy" width="5210" height="2337">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/Woodmizer.svg" alt="Wood-Mizer" loading="lazy" width="209" height="23">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/emblem-capital.webp" alt="Emblem Capital" loading="lazy" width="2318" height="1246">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/georoc-logo.webp" alt="Georoc" loading="lazy" width="1890" height="463">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/chalmar-beef.png" alt="Chalmar Beef" loading="lazy" width="270" height="270">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/birmingham.webp" alt="Birmingham" loading="lazy" width="1280" height="397">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/Marshmellow-Surf.svg" alt="Marshmallow Surf" loading="lazy" width="220" height="89">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/tyaani-com.svg" alt="Tyaani" loading="lazy" width="168" height="34">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/savaya-com.svg" alt="Savaya" loading="lazy" width="170" height="31">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/twacha-logo.png" alt="Twacha" loading="lazy" width="500" height="187">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/PerimetrosPro.webp" alt="Perimetros Pro" loading="lazy" width="300" height="93">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/puntored-co.webp" alt="Puntored" loading="lazy" width="180" height="45">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/trigomais-com-br.png" alt="Trigomais" loading="lazy" width="400" height="200">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/clearsk-com.webp" alt="ClearSK" loading="lazy" width="307" height="125">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/elvisbeauty-com.avif" alt="Elvis Beauty" loading="lazy" width="190" height="107">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/drlamiche-com.png" alt="Dr Lamiche" loading="lazy" width="201" height="55">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/legup-in.avif" alt="LegUp" loading="lazy" width="155" height="80">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/fertilis.png" alt="Fertilis" loading="lazy" width="170" height="62">
 		</div>
-	</section>
+		<div class="brands-track" aria-hidden="true">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/and-beyond-logo.svg" alt="" loading="lazy" width="388" height="93">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/Greystar_Real_Estate_logo.png" alt="" loading="lazy" width="783" height="171">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/macna.png" alt="" loading="lazy" width="5210" height="2337">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/Woodmizer.svg" alt="" loading="lazy" width="209" height="23">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/emblem-capital.webp" alt="" loading="lazy" width="2318" height="1246">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/georoc-logo.webp" alt="" loading="lazy" width="1890" height="463">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/chalmar-beef.png" alt="" loading="lazy" width="270" height="270">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/birmingham.webp" alt="" loading="lazy" width="1280" height="397">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/Marshmellow-Surf.svg" alt="" loading="lazy" width="220" height="89">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/tyaani-com.svg" alt="" loading="lazy" width="168" height="34">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/savaya-com.svg" alt="" loading="lazy" width="170" height="31">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/twacha-logo.png" alt="" loading="lazy" width="500" height="187">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/PerimetrosPro.webp" alt="" loading="lazy" width="300" height="93">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/puntored-co.webp" alt="" loading="lazy" width="180" height="45">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/trigomais-com-br.png" alt="" loading="lazy" width="400" height="200">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/clearsk-com.webp" alt="" loading="lazy" width="307" height="125">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/elvisbeauty-com.avif" alt="" loading="lazy" width="190" height="107">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/drlamiche-com.png" alt="" loading="lazy" width="201" height="55">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/legup-in.avif" alt="" loading="lazy" width="155" height="80">
+			<img class="brand-logo" src="/whatsform-preview/assets/images/brands/fertilis.png" alt="" loading="lazy" width="170" height="62">
+		</div>
+	</div>
+</section>
 
 	
 	<section class="wt-comparison">
@@ -291,8 +329,8 @@
 						<span class="wt-flow-link"></span>
 						<span class="wt-flow-hub is-alert">
 							<span class="wt-agent-avatar">
-								<span class="ww-why-memoji" style="--memoji-bg:#fbe1c8">
-									<img src="/whatsform-preview/assets/images/illustrations/memoji-4.png" alt="" loading="lazy" width="128" height="128">
+								<span class="ww-why-person" style="--person-bg:#fbe1c8">
+									<img src="/whatsform-preview/assets/images/people/4.png" alt="" loading="lazy" width="233" height="233">
 								</span>
 								<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								<span class="wt-flow-alert">!</span>
@@ -306,13 +344,13 @@
 						</svg>
 						<div class="wt-flow-team is-two">
 							<span class="wt-agent-avatar is-dim">
-									<span class="ww-why-memoji" style="--memoji-bg:#cfe3f7">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-2.png" alt="" loading="lazy" width="128" height="128">
+									<span class="ww-why-person" style="--person-bg:#cfe3f7">
+										<img src="/whatsform-preview/assets/images/people/3.png" alt="" loading="lazy" width="263" height="259">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span><span class="wt-agent-avatar is-dim">
-									<span class="ww-why-memoji" style="--memoji-bg:#d6f0d2">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" loading="lazy" width="128" height="128">
+									<span class="ww-why-person" style="--person-bg:#d6f0d2">
+										<img src="/whatsform-preview/assets/images/people/5.png" alt="" loading="lazy" width="249" height="249">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span>
@@ -331,7 +369,7 @@
 						<span class="wt-flow-note">Customer interacts with <b>WhatsForm</b></span>
 						<span class="wt-flow-link"></span>
 						<span class="wt-flow-hub">
-							<span class="wt-flow-logo"><i class="fas fa-list-ul"></i></span>
+							<span class="wt-flow-logo"><img src="/whatsform-preview/assets/images/whatsform-mark.svg" alt="" class="ill-wf-mark" width="40" height="40" loading="lazy"></span>
 						</span>
 						<span class="wt-flow-link"></span>
 						<span class="wt-flow-note">WhatsForm distributes messages among your team</span>
@@ -342,18 +380,18 @@
 						</svg>
 						<div class="wt-flow-team">
 							<span class="wt-agent-avatar">
-									<span class="ww-why-memoji" style="--memoji-bg:#cfe3f7">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-2.png" alt="" loading="lazy" width="128" height="128">
+									<span class="ww-why-person" style="--person-bg:#cfe3f7">
+										<img src="/whatsform-preview/assets/images/people/3.png" alt="" loading="lazy" width="263" height="259">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span><span class="wt-agent-avatar">
-									<span class="ww-why-memoji" style="--memoji-bg:#fbe7a8">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-1.png" alt="" loading="lazy" width="128" height="118">
+									<span class="ww-why-person" style="--person-bg:#fbe7a8">
+										<img src="/whatsform-preview/assets/images/people/2.png" alt="" loading="lazy" width="246" height="246">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span><span class="wt-agent-avatar">
-									<span class="ww-why-memoji" style="--memoji-bg:#d6f0d2">
-										<img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" loading="lazy" width="128" height="128">
+									<span class="ww-why-person" style="--person-bg:#d6f0d2">
+										<img src="/whatsform-preview/assets/images/people/5.png" alt="" loading="lazy" width="249" height="249">
 									</span>
 									<span class="wt-wa-badge"><i class="fab fa-whatsapp"></i></span>
 								</span>
@@ -386,7 +424,7 @@
   <span class="ill-grid"></span>
 
   <div class="ill-share-pill">
-    <img src="/whatsform-preview/assets/images/illustrations/memoji-1.png" alt="" class="ill-share-avatar" loading="lazy" width="128" height="118"><img src="/whatsform-preview/assets/images/illustrations/memoji-2.png" alt="" class="ill-share-avatar" loading="lazy" width="128" height="128"><img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" class="ill-share-avatar" loading="lazy" width="128" height="128"><img src="/whatsform-preview/assets/images/illustrations/memoji-4.png" alt="" class="ill-share-avatar" loading="lazy" width="128" height="128">
+    <img src="/whatsform-preview/assets/images/people/2.png" alt="" class="ill-share-avatar" loading="lazy" width="246" height="246"><img src="/whatsform-preview/assets/images/people/3.png" alt="" class="ill-share-avatar" loading="lazy" width="263" height="259"><img src="/whatsform-preview/assets/images/people/5.png" alt="" class="ill-share-avatar" loading="lazy" width="249" height="249"><img src="/whatsform-preview/assets/images/people/4.png" alt="" class="ill-share-avatar" loading="lazy" width="233" height="233">
     <span class="ill-share-send"><i class="fas fa-paper-plane"></i></span>
   </div>
 
@@ -568,7 +606,7 @@
   <div class="ww-build-canvas">
     <div class="ww-build-page">
       <div class="ww-build-cover">
-        <img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" loading="lazy" width="128" height="128">
+        <img src="/whatsform-preview/assets/images/people/5.png" alt="" loading="lazy" width="249" height="249">
       </div>
       <p class="ww-build-title">Schedule an appointment</p>
       <span class="ww-build-bar"></span>
@@ -603,17 +641,17 @@
 				</div>
 				<div class="w-full md:w-1/2 wt-feature-image">
 					<div class="ww-fx ww-team" aria-hidden="true">
-  <span class="ww-team-logo"><i class="fas fa-list-ul"></i></span>
+  <span class="ww-team-logo"><img src="/whatsform-preview/assets/images/whatsform-mark.svg" alt="" class="ill-wf-mark" width="40" height="40" loading="lazy"></span>
   <p class="ww-team-caption">Team members</p>
   <div class="ww-team-stack">
-    <span class="ww-why-memoji" style="--memoji-bg:#fbe7a8">
-        <img src="/whatsform-preview/assets/images/illustrations/memoji-1.png" alt="" loading="lazy" width="128" height="118">
-      </span><span class="ww-why-memoji" style="--memoji-bg:#cfe3f7">
-        <img src="/whatsform-preview/assets/images/illustrations/memoji-2.png" alt="" loading="lazy" width="128" height="128">
-      </span><span class="ww-why-memoji" style="--memoji-bg:#d6f0d2">
-        <img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" loading="lazy" width="128" height="128">
-      </span><span class="ww-why-memoji" style="--memoji-bg:#fbe1c8">
-        <img src="/whatsform-preview/assets/images/illustrations/memoji-4.png" alt="" loading="lazy" width="128" height="128">
+    <span class="ww-why-person" style="--person-bg:#fbe7a8">
+        <img src="/whatsform-preview/assets/images/people/2.png" alt="" loading="lazy" width="246" height="246">
+      </span><span class="ww-why-person" style="--person-bg:#cfe3f7">
+        <img src="/whatsform-preview/assets/images/people/3.png" alt="" loading="lazy" width="263" height="259">
+      </span><span class="ww-why-person" style="--person-bg:#d6f0d2">
+        <img src="/whatsform-preview/assets/images/people/5.png" alt="" loading="lazy" width="249" height="249">
+      </span><span class="ww-why-person" style="--person-bg:#fbe1c8">
+        <img src="/whatsform-preview/assets/images/people/4.png" alt="" loading="lazy" width="233" height="233">
       </span>
     <span class="ww-team-add"><i class="fas fa-plus"></i></span>
   </div>
@@ -631,13 +669,13 @@
       <path d="M171 42L180 54L189 42"></path>
     </svg>
     <span class="ww-why-agent">
-        <span class="ww-why-memoji is-large" style="--memoji-bg:#cfe3f7">
-          <img src="/whatsform-preview/assets/images/illustrations/memoji-2.png" alt="" loading="lazy" width="128" height="128">
+        <span class="ww-why-person is-large" style="--person-bg:#cfe3f7">
+          <img src="/whatsform-preview/assets/images/people/3.png" alt="" loading="lazy" width="263" height="259">
         </span>
         <span class="ww-why-agent-name">Sales Agent</span>
       </span><span class="ww-why-agent">
-        <span class="ww-why-memoji is-large" style="--memoji-bg:#d6f0d2">
-          <img src="/whatsform-preview/assets/images/illustrations/memoji-3.png" alt="" loading="lazy" width="128" height="128">
+        <span class="ww-why-person is-large" style="--person-bg:#d6f0d2">
+          <img src="/whatsform-preview/assets/images/people/5.png" alt="" loading="lazy" width="249" height="249">
         </span>
         <span class="ww-why-agent-name">Support Agent</span>
       </span>
@@ -852,7 +890,7 @@
       <div class="footer-grid">
          <!-- Brand Column -->
          <div class="footer-col footer-col--brand">
-            <a href="https://whatsform.com/" class="footer-logo">
+            <a href="/whatsform-preview/home/" class="footer-logo">
                <img src="/whatsform-preview/assets/images/logo-dark.png" alt="WhatsForm" width="1020" height="228">
             </a>
             <p class="footer-tagline">Turn WhatsApp into your business inbox. Collect leads, automate replies, and close deals faster.</p>
