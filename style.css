@@ -16584,62 +16584,12 @@ a.nav-contact-btn--hide {
 .ill-typing i {
   width: 6px;
   height: 6px;
+  opacity: 0.6;
 }
 
 [dir] .ill-typing i {
   border-radius: 50%;
   background: #8696a0;
-  -webkit-animation: ill-typing 1.2s ease-in-out infinite;
-          animation: ill-typing 1.2s ease-in-out infinite;
-}
-
-[dir] .ill-typing i:nth-child(2) {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-}
-
-[dir] .ill-typing i:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ill-typing i {
-    opacity: 0.6;
-  }
-
-  [dir] .ill-typing i {
-    -webkit-animation: none;
-            animation: none;
-  }
-}
-
-@-webkit-keyframes ill-typing {
-  0%, 60%, 100% {
-    opacity: 0.35;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  30% {
-    opacity: 1;
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-  }
-}
-
-@keyframes ill-typing {
-  0%, 60%, 100% {
-    opacity: 0.35;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-
-  30% {
-    opacity: 1;
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
-  }
 }
 
 .ill-wf-mark {
@@ -19309,18 +19259,22 @@ a.nav-contact-btn--hide {
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 6px;
   background-blend-mode: multiply;
 }
 
 [dir] .ill-iphone-thread {
-  padding: 10px 9px;
+  padding: 12px 9px;
   background-color: #ece5dd;
   background-image: url("/whatsform-preview/assets/images/whatsapp-background.png");
   background-position: center top;
   background-size: 460px;
   background-repeat: no-repeat;
+}
+
+[dir] .ill-iphone-thread .ill-bubble-out {
+  background: #d9fdd3;
 }
 
 .ill-iphone-thread .ill-bubble {
